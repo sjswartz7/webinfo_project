@@ -1,7 +1,8 @@
 # webinfo_project
 Repository containing the codes for our webinfo project at KU Leuven
 
-# Possible division of HTML pages with incorporation of Javascript/Bootstrap animation elements
+_Possible division of HTML pages with incorporation of Javascript/Bootstrap animation elements_
+
 Up for grabs: Main page, Search results page, Browse by book page
 
 Hanne -
