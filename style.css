@@ -10,15 +10,8 @@ header {
     z-index: 1000;
 }
 
-.flex-container {
-    height: 300px;
-    display: flex;
-    justify-content: space-between;
-}
 
 .card {
-    width: 100%;
-    flex: auto;
     margin: 10px;
 }
 
@@ -38,7 +31,7 @@ main {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #ffffff;
+    background-color: #f3f3f3;
     padding: 10px;
     z-index: 1001;
 }

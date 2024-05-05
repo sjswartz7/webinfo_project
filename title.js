@@ -1,5 +1,3 @@
-const cardContainer = document.getElementById("card-container");
-
 var bookList = Array(
     'Murder on the Orient Express','And Then There Were None','The Mysterious Affair at Styles',
     'Death on the Nile','The ABC Murders','The Murder of Roger Ackroyd', 'The Murder at the Vicarage',
@@ -29,26 +27,6 @@ async function createCard(title) {
         // Handle cases where there's no ISBN or no books found
         console.error("No ISBN found for book:", title);
     }
-
-    /* following is copied from Gemini and does not function
-
-    // Access the details element
-    const cardDetails = cardClone.querySelector(".card-details");
-
-    // Fill details element (same as before)
-    cardDetails.innerHTML = `
-    <p>Author: response.docs[0].author_name[0]</p>
-    <p>Published: response.docs[0].publish_year</p>
-  `;
-
-    // Toggle card size and details on card click
-    cardClone.addEventListener("click", function() {
-        cardDetails.classList.toggle("hidden"); // Toggle visibility
-        cardClone.classList.toggle("card-expanded"); // Toggle card size (optional)
-    });
-
-    */
-
     return cardClone;
 }
 
@@ -58,18 +36,13 @@ async function createCard(title) {
 async function loopThroughBooks() {
     bookList.forEach(async (title) => {
         const bookCard = await createCard(title);
+        const cardContainer = document.getElementById('card-container');
         cardContainer.appendChild(bookCard);
     });
 }
-loopThroughBooks();
 
-/*
-bookList.forEach(title => {
-    const bookCard = createCard(title);
-    cardContainer.appendChild(bookCard);
-    console.log(bookCard) //for debugging purposes
-});
-*/
+
+loopThroughBooks();
 
 
 

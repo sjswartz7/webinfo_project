@@ -10,61 +10,43 @@
 <body>
 
 <template id="cardTemplate">
-    <div class="card col d-flex justify-content-between">
+    <div class="card col-md-2 col-sm-4">
         <img class="card-img-top" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title"></h5>
             <p class="card-text"></p>
-            <div class="card-details hidden"> </div> <!-- copied from Gemini and does not function -->
         </div>
     </div>
 </template>
 
-<template id='cardPreviewTemplate'> <!-- nog niets mee gedaan -->
-    <div class="preview" data-target="p-1">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title"></h5>
-                <p class="card-text"></p>
-                <div class="card-details hidden"> </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</template>
 
 <header>
-    <div class="container">
-        <div class="col-auto blog-header py-3">Books</div>
-        <div class="col-auto text-end">
+
+    <div class="row justify-content-end p-2">
+        <div class="col-4 d-flex justify-content-center">
+            <div class="blog-header py-3">Books</div>
+        </div>
+        <div class="col-4 d-flex justify-content-end">
             <a href="search.html" target="_blank">
-                <button type="button" class="btn btn-outline-dark float-right" href="search">Search</button>
+                <button type="button" class="btn btn-outline-dark" href="search">Search</button>
             </a>
         </div>
     </div>
-    <div class="container">
+
+    <div class="row d-flex justify-content-between">
         <div class="submenu">
-            <div class="row">
-                <div class="submenu-item col d-flex justify-content-between">Location</div>
-                <div class="submenu-item col d-flex justify-content-between">Titles</div>
-                <div class="submenu-item col d-flex justify-content-between">Year</div>
-            </div>
+                <div class="submenu-item">Location</div>
+                <div class="submenu-item">Titles</div>
+                <div class="submenu-item">Year</div>
         </div>
     </div>
     <hr width="fit" color="fff">
 </header>
 
-
 <main>
     <h2>Browse By Title</h2>
 
-    <container style="margin:20px"> <!--https://www.scaler.com/topics/bootstrap-tutorial/bootstrap-align-right/ -->
-    <div style="padding:20px" class="flex-container">
-        <div id="card-container"></div> <!--content will be added through javascript-->
-    </div>
-    </container>
-
-    <div class="products-preview"> <!--nog niets mee gedaan-->
+    <div class="row flex-row justify-content-center" id="card-container">
     </div>
 
 </main>
