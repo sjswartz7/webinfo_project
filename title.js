@@ -24,11 +24,30 @@ async function createCard(title) {
     // Assuming the first book [0] has the ISBN
     if (response.docs[0] && response.docs[0].isbn) {
         const cardImg = cardClone.querySelector(".card-img-top");
-        cardImg.src = "http://covers.openlibrary.org/b/isbn/"+response.docs[0].isbn[0]+"-S.jpg"; //-L for really big & high resolution, -S for small
+        cardImg.src = "http://covers.openlibrary.org/b/isbn/"+response.docs[0].isbn[0]+"-L.jpg"; //-L for really big & high resolution, -S for small
     } else {
         // Handle cases where there's no ISBN or no books found
         console.error("No ISBN found for book:", title);
     }
+
+    /* following is copied from Gemini and does not function
+
+    // Access the details element
+    const cardDetails = cardClone.querySelector(".card-details");
+
+    // Fill details element (same as before)
+    cardDetails.innerHTML = `
+    <p>Author: response.docs[0].author_name[0]</p>
+    <p>Published: response.docs[0].publish_year</p>
+  `;
+
+    // Toggle card size and details on card click
+    cardClone.addEventListener("click", function() {
+        cardDetails.classList.toggle("hidden"); // Toggle visibility
+        cardClone.classList.toggle("card-expanded"); // Toggle card size (optional)
+    });
+
+    */
 
     return cardClone;
 }
