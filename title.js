@@ -33,7 +33,6 @@ async function createCard(title) {
     return cardClone;
 }
 
-
 // also async function cause if not the forEach loop might be trying
 // to append the card before it's fully created (asynchronous operation).
 async function loopThroughBooks() {
