@@ -39,7 +39,6 @@ card{
     cursor: pointer;
 }
 
-/* Style for hover effect */
 header:hover .submenu {
     display: block;
 }
