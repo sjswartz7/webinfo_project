@@ -1,0 +1,46 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+main {
+    margin: 150px 20px auto 20px;
+}
+
+card{
+    margin-bottom: 20px;
+}
+.card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Style for the submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 10px;
+    z-index: 1001;
+}
+
+/* Style for the submenu items */
+.submenu-item {
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+/* Style for hover effect */
+header:hover .submenu {
+    display: block;
+}

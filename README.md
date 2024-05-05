@@ -2,9 +2,9 @@
 
 _Possible division of HTML pages with incorporation of Javascript/Bootstrap animation elements_:
 
-Up for grabs: Main page, Search results page, Browse by book page
+Up for grabs: Main page
 
-Hanne -
+Hanne - Search results page, Browse by book page
 
 Mariann - Browse by location page, Socio-political context page
 
