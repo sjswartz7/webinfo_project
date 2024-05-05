@@ -5,7 +5,6 @@ var bookList = Array(
     'Death on the Nile','The ABC Murders','The Murder of Roger Ackroyd', 'The Murder at the Vicarage',
     'Evil Under the Sun','The Body in the Library','Crooked House');
 
-
 function getBooks(t){
     return fetch('https://openlibrary.org/search.json?q='+t)
         .then(a => a.json());
