@@ -45,3 +45,11 @@ main {
 header:hover .submenu {
     display: block;
 }
+
+#go-button{
+    margin-top: 10px;
+}
+
+#search-results{
+    margin: 0px 50px;
+}
