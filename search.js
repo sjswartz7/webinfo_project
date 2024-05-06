@@ -1,46 +1,37 @@
-function ProcessForm() {
-    var title = document.getElementById("title").value;
-    var author = document.getElementById("author").value;
+let form = document.getElementById("search-form");
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    ProcessForm()
+});
 
-    searchBooks(title);
-    /*
-    if (typeof title !== "string") {
-        // Get a reference to the element where you want to print the error message
-        var errorMessageElement = document.getElementById("error-message");
 
-        // Check if the element exists before accessing it
-        if (errorMessageElement) {
-            errorMessageElement.textContent = "Please enter a valid string value.";
-        } else {
-            console.error("Error: No element with id 'error-message' found.");
-        }
+async function ProcessForm() {
+    document.getElementById('books-output').innerHTML = "";
+    const data = await searchBooks();
+    for (var i = 0; i < 3; i++) {
+        document.getElementById("books-output").innerHTML += "<h2>" + data.docs[i].title + "</h2>"; //TODO: if nothing found, get error message
     }
-    */
+}
+//subject:travel place:istanbul
+//publish_year:[* TO 1800] will find anything published before and up to the year 1800.
+
+function isInputProvided(elementId) {
+    const element = document.getElementById(elementId);
+    return element !== null && element !== undefined;
 }
 
+async function searchBooks() {
+    // Build the base URL
+    let url = 'http://openlibrary.org/search.json?q=';
+    // Add parameters if provided
+    url += 'author=Agatha Christie';
+    if (isInputProvided('title')) {
+        const t = document.getElementById("title").value;
+        url += ' title:' + encodeURIComponent(t); // TODO: Encode spaces to '+'
+    }
 
-const outputElement = document.getElementById('books-output');
-function searchBooks(query) {
-  const apiUrl = `https://openlibrary.org/search.json?q=${query}`;
-  fetch(apiUrl)
-    .then(response => {
-        if (!response.ok) {
-            if (response.status === 404) {
-                throw new Error('Data not found');
-            } else if (response.status === 500) {
-                throw new Error('Server error');
-            } else {
-                throw new Error('Network response was not ok');
-            }
-        }
-        return response.json();
-    })
-    .then(data => {
-        const title = data.title;
-        const subject = data.subject; //response fields: https://github.com/internetarchive/openlibrary/blob/b4afa14b0981ae1785c26c71908af99b879fa975/openlibrary/plugins/worksearch/schemes/works.py#L38-L91
-        outputElement.innerHTML = `<p>Found book:  ${title} about ${subject}</p>`;
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
+    // Fetch the data
+    const response = await fetch(url)
+        .then(a => a.json());
+    return response;
 }
