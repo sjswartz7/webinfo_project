@@ -28,6 +28,11 @@ def timeline():
 def books():
     return render_template("books.html")
 
+#if you need to add more pages, just copy the functions above, like this:
+'''@app.route("/newpage")
+    def newpage():
+    return render_template("newpage.html")'''
+
 app.debug = True
 
 if __name__ == "__main__":
