@@ -41,7 +41,7 @@ body {
   color: #eee7e7; 
   align-content: center;
   text-align: center;
-  padding-right: 240px;
+  padding-right: 220px;
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   font-size: 2.25rem;
 }
@@ -68,7 +68,7 @@ body {
 .navbar-subtitle {
   font-size: 16px;
   color: #eee9e9; 
-  padding-right: 240px;
+  padding-right: 220px;
   text-align:center;
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   font-size: 16px;
