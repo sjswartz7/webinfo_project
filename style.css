@@ -157,3 +157,13 @@ a {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
+
+
+
+#load-more[disabled] {
+    background-color: #eaeaea !important;
+}
+
+#result-actions{
+    display:none;
+}
