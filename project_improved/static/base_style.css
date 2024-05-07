@@ -1,0 +1,140 @@
+
+
+body {
+    font-family: "American Typewriter", serif;
+    font-weight: lighter;
+    justify-content: center;
+    background-color: #e4d9d9;
+    padding-top: 100px; 
+    padding-bottom: 100px; 
+}
+
+.navbar.navbar-custom {
+  background-color: #b97070 !important;
+  color: #f4f0f0 !important; 
+  font-size: 20px;
+  font-family: "American Typewriter", serif; 
+  font-weight: bold;
+  padding-left: 30px;
+  padding-right: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; 
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: #ffffff; 
+  font-size: 16px; 
+}
+
+.navbar-title {
+  font-size: 24px; 
+  font-weight: bold;
+  color: #eee7e7; 
+  align-content: center;
+  text-align: center;
+  padding-right: 240px;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+}
+
+.navbar-header {
+  text-align: center;
+  margin-right: 20px;
+  padding-right: 20px;
+}
+
+.nav-item .dropdown-item {
+  color: #321313; 
+  background-color: #ddcbc7;
+  font-family: "American Typewriter", serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-item .dropdown-item:hover, .nav-item .dropdown-item:focus {
+  color: #f06c6c; 
+  background-color: #e5eaef; 
+}
+
+.navbar-subtitle {
+  font-size: 16px;
+  color: #eee9e9; 
+  padding-right: 240px;
+  text-align:center;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 16px;
+}
+
+
+
+.navbar-custom .navbar-brand {
+  color: #ffffff; 
+  font-size: 16px; 
+}
+
+.btn {
+  background-color: #da9584;
+  color: #ffffff; 
+  font-size: 16px;
+  font-family: "American Typewriter", serif; 
+}
+
+
+footer {
+  background-color: #f2e3cf;
+  padding-top: 100px;
+  margin-top: 100px;
+  width: 100%;
+  padding: 40px 0; 
+  margin: 0 auto;
+  border: 1px dotted black;
+  font-family: "American Typewriter", serif;
+  display: block;
+  bottom: 0;
+}
+
+.footer span {
+  font-weight: bold;
+}
+
+ /* Style all font awesome icons */
+ .fa {
+    padding: 15px;
+    margin-left: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  } 
+
+    /* Insta */
+  .fa-instagram {
+    background: #ee55b1;
+    color: white;
+  } 
+
+footer a {
+    color: #f8f9fa;
+}

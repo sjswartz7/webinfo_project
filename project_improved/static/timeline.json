@@ -1,0 +1,331 @@
+{
+  "title": {
+    "media": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Agatha_Christie.png",
+      "caption": "Agatha Christie portrait",
+      "credit": "Agatha Christie plaque -Torre Abbey.jpg: Violetrigaderivative work: F l a n k e r, CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>, via Wikimedia Commons"
+    },
+    "text": {
+      "headline": "Agatha Christie<br/> 1890 - 1976",
+      "text": "<p>English writer Agatha Christie, the most prolific female author of all time, was known for her often mind-bending whodunits that kept readers guessing until the end. Her long life was full of fascinating twists, heartbreak, and excitement, and spanned two world wars, a massive economic depression, and the last vestiges of British colonialism.</p>"
+    }
+  },
+
+    "events": [
+      {
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Ashfield_Torquay_2.jpg",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/6/68/Ashfield_Torquay_2.jpg",
+          "caption": "Christie's birthplace and childhood home, Ashfield, in Torquay, Devon",
+          "credit": "Wikimedia Commons"
+        },
+        "start_date": {
+          "month": "9",
+          "day": "15",
+          "year": "1890"
+        },
+        "text": {
+          "headline": "Agatha Mary Clarissa Miller is born in Devon, UK",
+          "text": "<p>Agatha spent her early years in the coastal region of Devon, England.</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/30a_Sammlung_Eybl_Gro%C3%9Fbritannien._Alfred_Leete_%281882%E2%80%931933%29_Britons_%28Kitchener%29_wants_you_%28Briten_Kitchener_braucht_Euch%29._1914_%28Nachdruck%29%2C_74_x_50_cm._%28Slg.Nr._552%29.jpg",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/0/01/30a_Sammlung_Eybl_Gro%C3%9Fbritannien._Alfred_Leete_%281882%E2%80%931933%29_Britons_%28Kitchener%29_wants_you_%28Briten_Kitchener_braucht_Euch%29._1914_%28Nachdruck%29%2C_74_x_50_cm._%28Slg.Nr._552%29.jpg",
+          "caption": "Wartime army recruitment poster",
+          "credit": "Eybl, Plakatmuseum Wien/Wikimedia Commons"
+        },
+        "start_date": {
+          "month": "7",
+          "day": "28",
+          "year": "1914"
+        },
+        "end_date": {
+          "month": "11",
+          "day": "11",
+          "year": "1918"
+        },
+        "text": {
+          "headline": "The Great War",
+          "text": "Later called World War I shortly after the beginning of World War II, this war was different from any previous in history due to its devastating use of modern technology"
+        }
+      },
+      {
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Archibald_Christie_1915.jpg",
+          "thumbnail":"https://upload.wikimedia.org/wikipedia/commons/5/52/Archibald_Christie_1915.jpg",
+          "caption": "Archibald Christie in 1915",
+          "credit": "English Heritage media publication, Public domain, via Wikimedia Commons"
+        },
+        "start_date": {
+          "month": "12",
+          "day": "24",
+          "year": "1914"
+        },
+        "text": {
+          "headline": "Agatha Marries Archibald Christie",
+          "text": "Agatha's first husband, Colonel Archibald \"Archie\" Christie, served in the Royal Artillery."
+        }
+      },
+      {
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Agatha_Christie_with_her_daughter_Rosalind.jpg",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Agatha_Christie_with_her_daughter_Rosalind.jpg",
+          "caption": "Agatha Christie with daughter Rosalind",
+          "credit": "Wikimedia Commons"
+        },
+        "start_date": {
+          "month": "8",
+          "day": "5",
+          "year": "1919"
+        },
+        "text": {
+          "headline": "Daughter Rosalind is Born",
+          "text": "Christie's daughter, Rosalind Margaret Clarissa, is born at Ashfield"
+        }
+      },
+      {
+        "media": {
+          "url": "https://covers.openlibrary.org/b/olid/OL47232302M-L.jpg",
+          "thumbnail": "https://covers.openlibrary.org/b/olid/OL47232302M-S.jpg",
+          "caption": "Cover of The Mysterious Affair at Styles",
+          "credit": "openlibrary.org"
+        },
+        "start_date": {
+          "month": "1",
+          "day": "21",
+          "year": "1921"
+        },
+        "text": {
+          "headline": "First Novel Published",
+          "text": "The Mysterious Affair at Styles is published in the UK, and Christie's first recurring character, Belgian detective Hercule Poirot, is introduced"
+        }
+      },
+      {
+        "media": {
+          "url": "https://covers.openlibrary.org/b/olid/OL46524697M-L.jpg",
+          "thumbnail": "https://covers.openlibrary.org/b/olid/OL46524697M-S.jpg",
+          "caption": "Cover of The Murder of Roger Ackroyd",
+          "credit": "openlibrary.org"
+        },
+        "start_date": {
+          "year": "1926"
+        },
+        "text": {
+          "headline": "The Murder of Roger Ackroyd Published",
+          "text": "Hercule Poirot appears for a third time in this whodunit, having made his second appearance in the 1923 novel The Murder on the Links"
+        }
+      },
+      {
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Christie_at_Hydro.jpg",
+          "thumbnail":"https://upload.wikimedia.org/wikipedia/commons/0/0a/Christie_at_Hydro.jpg",
+          "caption": "The London Daily Herald, 15 December 1926",
+          "credit": "Wikimedia Commons"
+        },
+        "start_date": {
+          "month": "12",
+          "day": "3",
+          "year": "1926"
+        },
+        "end_date": {
+          "month": "12",
+          "day": "14",
+          "year": "1926"
+        },
+        "text": {
+          "headline": "Disappearance",
+          "text": "Agatha Christie mysteriously disappears for nearly two weeks in late 1926"
+        }
+      },
+      {
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Orient-Express_Constantinople_1900.JPG",
+          "thumbnail":"https://upload.wikimedia.org/wikipedia/commons/6/62/Orient-Express_Constantinople_1900.JPG",
+          "caption": "The Orient Express, ca. 1900",
+          "credit": "Wikimedia Commons"
+        },
+        "start_date": {
+          "year": "1928"
+        },
+        "text": {
+          "headline": "Travels aboard Orient Express",
+          "text": "Agatha travels aboard the Orient Express to Istanbul, giving her firsthand knowledge of the train ride "
+        }
+      },
+      {
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Crowd_outside_nyse.jpg",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Crowd_outside_nyse.jpg",
+          "caption": "A crowd gathers outside the New York Stock Exchange after the crash",
+          "credit": "US-gov, Public domain, via Wikimedia Commons"
+        },
+        "start_date": {
+          "month": "10",
+          "day": "29",
+          "year": "1929"
+        },
+        "text": {
+          "headline": "Stock Market Crash",
+          "text": "The Wall Street stock market crashes, causing economic chaos and a depression that spread from the United States to Europe by the early 1930s"
+        }
+      },
+      {
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Agatha_Christie_and_Max_Mallowan_in_1950.png",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Agatha_Christie_and_Max_Mallowan_in_1950.png",
+          "caption": "Agatha and Max at home in 1950",
+          "credit": "National Portrait Gallery, London, Public domain, via Wikimedia Commons"
+        },
+        "start_date": {
+          "month": "9",
+          "year": "1930"
+        },
+        "text": {
+          "headline": "Agatha's Second Marriage",
+          "text": "Agatha marries her second husband, archaeologist Max Mallowan. The two remain married for forty-six years, until Christie's death."
+        }
+      },
+      {
+        "media": {
+          "url": "https://covers.openlibrary.org/b/olid/OL50528186M-L.jpg",
+          "thumbnail": "https://covers.openlibrary.org/b/olid/OL50528186M-S.jpg",
+          "caption": "Cover of Murder on the Orient Express",
+          "credit": "openlibrary.org"
+        },
+        "start_date": {
+          "month": "1",
+          "day": "1",
+          "year": "1934"
+        },
+        "text": {
+          "headline": "Murder on the Orient Express is Published",
+          "text": "Christie's iconic character Hercule Poirot embarks on a fateful train journey!"
+        }
+      },
+      {
+        "media": {
+          "url": "https://covers.openlibrary.org/b/olid/OL51163861M-L.jpg",
+          "thumbnail": "https://covers.openlibrary.org/b/olid/OL51163861M-S.jpg",
+          "caption": "Cover of Death on the Nile",
+          "credit": "openlibrary.org"
+        },
+        "start_date": {
+          "month": "11",
+          "day": "1",
+          "year": "1937"
+        },
+        "text": {
+          "headline": "Death on the Nile is Published",
+          "text": "According to the <a href = https://www.smithsonianmag.com/history/how-agatha-christies-love-of-archaeology-influenced-death-on-the-nile-180979544/>Smithsonian</a>, an interest in archaeology inspired Agatha in the writing of this novel."
+        }
+      },
+      {
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/1944_NormandyLST.jpg",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/f/f4/1944_NormandyLST.jpg",
+          "caption": "June 1944 Allied landing at Omaha Beach in Normandy, France",
+          "credit": "Chief Photographer's Mate (CPHOM) Robert F. Sargent, U.S. Coast Guard, Public domain, via Wikimedia Commons"
+        },
+        "start_date": {
+          "month": "9",
+          "day": "1",
+          "year": "1939"
+        },
+        "end_date": {
+          "month": "9",
+          "day": "2",
+          "year": "1945"
+        },
+        "text": {
+          "headline": "The Second World War",
+          "text": "Germany invades Poland on 1 September 1939, starting a six-year global war that will cause immeasurable devastation and result in the deaths of millions, including the Nazi mass murder of six million Jews and millions of others they deemed their enemies. After the war ended in Europe in April 1945 with Germany's surrender, it ended globally with Japan's surrender after the United States dropped two atomic bombs on Hiroshima and Nagasaki, destroying the cities and killing as many as 226,000."
+        }
+      },
+      {
+        "media": {
+          "url": "https://covers.openlibrary.org/b/olid/OL43304516M-L.jpg",
+          "thumbnail": "https://covers.openlibrary.org/b/olid/OL43304516M-S.jpg",
+          "caption": "Cover of And Then There Were None",
+          "credit": "openlibrary.org"
+        },
+        "start_date": {
+          "month": "11",
+          "year": "1939"
+        },
+        "text": {
+          "headline": "And Then There Were None is Published",
+          "text": "One of the best-selling novels of all time, this story of ten strangers on an island dying one-by-one is a baffling mystery that keeps readers guessing until the end."
+        }
+      },
+      {
+        "media": {
+          "url": "ADD LINK",
+          "caption": "ADD CAPTION",
+          "credit": "ADD CREDIT"
+        },
+        "start_date": {
+          "month": "9",
+          "day": "20",
+          "year": "1943"
+        },
+        "text": {
+          "headline": "Stage Play Adaptation of And Then There Were None Premieres in London",
+          "text": "In light of the London Blitz during the Second World War, to avoid bringing down the mood of British theatregoers even further, Christie modified the stage play version of And Then There Were None to make the ending less bleak."
+        }
+      },
+      {
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Mahatma-Gandhi%2C_studio%2C_1931.jpg",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Mahatma-Gandhi%2C_studio%2C_1931.jpg",
+          "caption": "Mahatma Gandhi, leader in the movement for Indian independence, in 1931",
+          "credit": "Elliott & Fry, Public domain, via Wikimedia Commons"
+        },
+        "start_date": {
+          "month": "8",
+          "day": "15",
+          "year": "1947"
+        },
+        "text": {
+          "headline": "India and Pakistan become independent from the British Empire",
+          "text": "After nearly a century of British rule, India and Pakistan become independent states upon the signing of the Indian Independence Act"
+        }
+      },
+      {
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Agatha_Christies_grave%2C_St_Marys%2C_Cholsey_-_geograph.org.uk_-_1531047.jpg",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/2/24/Agatha_Christies_grave%2C_St_Marys%2C_Cholsey_-_geograph.org.uk_-_1531047.jpg",
+          "caption": "Grave of Agatha Christie",
+          "credit": "andy dolman / Agatha Christies grave, St Marys, Cholsey <a href=https://creativecommons.org/licenses/by-sa/2.0/>Creative Commons Attribution-ShareAlike 2.0</a>"
+        },
+        "start_date": {
+          "month": "1",
+          "day": "12",
+          "year": "1976"
+        },
+        "text": {
+          "headline": "Agatha Christie Dies",
+          "text": "At the age of 85, Agatha Christie passes away in her home, Winterbrook House, in Wallingford, England"
+        }
+      },
+      {
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Agatha_Christie._1967_Ljubljana_1.jpg",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Agatha_Christie._1967_Ljubljana_1.jpg",
+          "caption": "Agatha in Ljubljana, 1967",
+          "credit": "Edi Šelhaus, Public domain, via Wikimedia Commons"
+        },
+        "start_date": {
+          "year": "1976"
+        },
+        "end_date": {
+          "year": "2024"
+        },
+        "text": {
+          "headline": "A Lasting Legacy",
+          "text": "Agatha leaves behind a lasting legacy, from films and television shows adapted from her books, to films and novels about Agatha herself. The Annual <a href=https://en.wikipedia.org/wiki/Agatha_Award>Agatha Awards</a> honour mystery novelists each year."
+        }
+      }
+    ]
+  }
