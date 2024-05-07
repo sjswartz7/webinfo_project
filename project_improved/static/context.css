@@ -19,5 +19,22 @@ h1{
     font-size: 23px;
     font-family: "American Typewriter", serif; 
     text-align: center;
+    justify-content: center;
   }
+
+  .content-container {
+    padding: 15px; 
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    margin: 10px; 
+}
+
+.content-container .accordion-body {
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6; 
+    color: #333; 
+}
+
   
