@@ -10,19 +10,27 @@ body {
     font-family: "American Typewriter", serif;
     font-weight: lighter;
     justify-content: center;
-    background-color: #e4d9d9;
-    padding-top: 100px; 
+    background-color: #e4d9d9; 
     padding-bottom: 100px; 
 }
 
+header {
+  margin-top: 60px;
+  background-color: #b97070;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
 .navbar.navbar-custom {
+  margin-bottom: 0px;
+  height: 60px;
   background-color: #b97070 !important;
   color: #f4f0f0 !important; 
   font-size: 20px;
   font-family: "American Typewriter", serif; 
   font-weight: bold;
   padding-left: 30px;
-  padding-right: 40px;
+  padding-right: 30px;
   position: fixed;
   top: 0;
   left: 0;
@@ -41,9 +49,8 @@ body {
   color: #eee7e7; 
   align-content: center;
   text-align: center;
-  padding-right: 220px;
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-  font-size: 2.25rem;
+  font-family: "American Typewriter", serif;
+  font-size: 50px;
 }
 
 .navbar-header {
@@ -67,11 +74,10 @@ body {
 
 .navbar-subtitle {
   font-size: 16px;
-  color: #eee9e9; 
-  padding-right: 220px;
+  color: #3e210c; 
   text-align:center;
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-  font-size: 16px;
+  font-family: "American Typewriter", serif;
+  font-size: 25px;
 }
 
 
@@ -100,6 +106,7 @@ footer {
   font-family: "American Typewriter", serif;
   display: block;
   bottom: 0;
+  position: bottom;
 }
 
 .footer span {
