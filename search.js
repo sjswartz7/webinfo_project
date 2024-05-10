@@ -23,7 +23,7 @@ function createResult(index, data){
     const bTitle = resultsTemp.querySelector(".book-title");
     bTitle.textContent = data.docs[index].title;
     const bAuthor = resultsTemp.querySelector(".author");
-    bAuthor.textContent = 'Author: '+data.docs[index].author;
+    bAuthor.textContent = 'Author: '+data.docs[index].author_name;
     const bSubj = resultsTemp.querySelector(".subject");
     bSubj.textContent = 'Subject: '+ data.docs[index].subject;
     const bLocation = resultsTemp.querySelector(".location");
@@ -44,12 +44,12 @@ async function ProcessForm() {
     document.getElementById('books-output').innerHTML = "";
 
     //show loading element
-    document.getElementById("loading-container").style.display = "block";
+    document.getElementById("loader").style.display = "block";
 
     data = await searchBooks();
 
     //hide loading element
-    document.getElementById("loading-container").style.display = "none";
+    document.getElementById("loader").style.display = "none";
     addResults(currentPage,data);
     document.getElementById("result-actions").style.display = "block";
 
@@ -70,9 +70,9 @@ function encodePublishYear(){
 
 async function searchBooks() {
     // Build the base URL
-    let url = 'http://openlibrary.org/search.json?q=';
+    let url = 'http://openlibrary.org/search.json?';
     // Add parameters if provided
-    url += 'Agatha Christie';
+    url += 'author=Agatha Christie';
     if (isInputProvided('title')) {
         const t = document.getElementById("title").value;
         url += '&title=' + encodeURIComponent(t);
