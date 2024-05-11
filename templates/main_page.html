@@ -1,0 +1,62 @@
+{% extends 'base_layout.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block specific_css %}
+<link href="main_page.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<h3>If you love travel, history, mysteries and the work of Agatha Christie, you've come to the right place!</h3>
+<h3>Map out a Christie-themed trip, learn about the books and immerse yourself in the historical context of her work!</h3>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <div class="container">
+                <div class="d">
+                    <div class="overlay">
+                        <div class = "items"></div>
+                        <div class = "items head">
+                            <p>Browse By Destination</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="container">
+                <div class="t">
+                    <div class="overlay">
+                        <div class = "items"></div>
+                        <div class = "items head">
+                            <p>Browse By Title</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="container">
+                <div class="d">
+                    <div class="overlay">
+                        <div class = "items"></div>
+                        <div class = "items head">
+                            <p>Browse By Year</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block specific_js %}
+
+{% endblock %}

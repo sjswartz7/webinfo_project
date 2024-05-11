@@ -1,3 +1,4 @@
+
 from flask import Flask,  render_template, request
 
 print("running")
@@ -16,6 +17,10 @@ def map():
 @app.route("/context")
 def context():
     return render_template("context.html")
+
+@app.route("/main_page")
+def main_page():
+    return render_template("main_page.html")
 
 app.debug = True
 
