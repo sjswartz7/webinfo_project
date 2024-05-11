@@ -1,0 +1,49 @@
+{% extends 'base_layout.html' %}
+
+{% block title %}
+Browse By Title
+{% endblock %}
+
+{% block specific_css %}
+
+{% endblock %}
+
+{% block content %}
+    
+
+<body>
+
+<template id="cardTemplate">
+    <div class="card col-md-2 col-sm-4">
+        <img class="card-img-top" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+        </div>
+    </div>
+</template>
+
+
+
+
+<main>
+    <h2>Browse By Title</h2>
+
+    <div class="row flex-row justify-content-center" id="card-container">
+    </div>
+</main>
+
+</body>
+
+
+{% endblock %}
+
+
+{% block specific_js %}
+
+<script src="../static/title.js"></script>
+
+{% endblock %}
+
+
+

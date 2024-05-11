@@ -1,0 +1,48 @@
+h1{
+    margin: 20px;
+    font-family: "American Typewrite"r, serif;
+    font-size: 35px;
+    font-stretch: expanded;
+    padding: 20px;
+    text-align: center;
+    text-shadow: #e21e1e;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1); 
+}
+
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    
+    background-color: #f4f4f4; /* Light background color */
+}
+
+#image-container {
+    position: relative; /* Needed for absolute positioning of child elements */
+    width: 80vw; /* Responsive width based on viewport */
+    max-width: 1200px; /* Maximum width to maintain image clarity */
+}
+
+#image-container img {
+    width: 100%; /* Make image responsive */
+    display: block; /* Remove bottom margin/gap */
+}
+
+/* Create a general class for clickable points */
+.point {
+    position: absolute; /* Position over the map */
+    width: 20px; /* Fixed size */
+    height: 20px; /* Fixed size */
+    background-color: #ff4500; /* Visible, distinct color */
+    border-radius: 50%; /* Circular points */
+    cursor: pointer; /* Indicate clickable item */
+    transform: translate(-50%, -50%); /* Center the point correctly */
+}
+
+/* Example positions for points - these would need to be adjusted based on specific locations on the map */
+.point[data-location="location1"] { top: 10%; left: 50%; }
+.point[data-location="location2"] { top: 20%; left: 55%; }
+.point[data-location="location3"] { top: 30%; left: 60%; }
+.point[data-location="location4"] { top: 40%; left: 65%; }
+/* Add additional points as needed */

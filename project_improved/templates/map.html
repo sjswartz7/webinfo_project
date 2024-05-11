@@ -1,0 +1,27 @@
+{% extends 'base_layout.html' %}
+
+{% block title %}
+Search by location
+{% endblock %}
+
+{% block specific_css %}
+
+<link rel="stylesheet" href="../static/mapstyle.css">
+
+{% endblock %}
+
+{% block content %}
+
+<h1>Agatha around the world</h1>
+<body>
+    <div id="image-container">
+        <img src="../static/images/worldmap.png" alt="World Map">
+        <!-- Define clickable points -->
+        <div class="point" data-location="location1" style="top: 10%; left: 50%;"></div>
+        <div class="point" data-location="location2" style="top: 20%; left: 55%;"></div>
+        <div class="point" data-location="location3" style="top: 30%; left: 60%;"></div>
+        <div class="point" data-location="location4" style="top: 40%; left: 65%;"></div>
+        <!-- Add more points as needed -->
+    </div>
+</body>
+{% endblock %}

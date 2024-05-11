@@ -1,0 +1,81 @@
+h1{
+    margin: 20px;
+    font-family: "American Typewrite"r, serif;
+    font-size: 35px;
+    font-stretch: expanded;
+    padding: 20px;
+    text-align: center;
+    text-shadow: #e21e1e;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1); 
+}
+
+.accordion{
+    margin: 30px;
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 100px;
+}
+
+.accordion-button {
+    background-color: #bd634c;
+    color: #ffffff; 
+    font-size: 30px;
+    font-family: "American Typewriter", serif; 
+    text-align: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px rgba(55, 28, 28, 0.1); 
+}
+  
+
+  .content-container {
+    display: flex;
+    align-items: center; 
+    column-gap: 30px;
+    padding: 15px; 
+    background-color: #fff; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(47, 10, 10, 0.1); 
+    margin: 10px; 
+}
+
+.content-container .accordion-body {
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.8; 
+    color: #333; 
+    padding-bottom: 15px;
+    text-indent: 15px;
+}
+
+.content-flex {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.text-container {
+    flex: 1; 
+    padding-right: 20px; 
+}
+
+.accordion-body a {
+    display: block;
+    text-align: right;
+    margin-right: 15px; 
+    color:#971515
+}
+
+
+.image-container {
+    flex-basis: 50%; 
+    box-shadow: 5px 5px 5px rgba(55, 28, 28, 0.1); 
+      
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto;
+    border-radius: 20%; 
+}
+
+
