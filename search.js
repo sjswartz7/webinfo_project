@@ -31,7 +31,7 @@ function createResult(index, data){
     const bPubl = resultsTemp.querySelector(".publish-year");
     bPubl.textContent = 'First Publish Year: '+data.docs[index].first_publish_year;
     const bButton = resultsTemp.getElementById("interested");
-    bButton.href = "https://www.google.com";
+    bButton.href = "https://www.google.com"; //TODO: make this link make sense
     const bImg = resultsTemp.querySelector(".book-image");
     bImg.src = "http://covers.openlibrary.org/b/isbn/"+data.docs[0].isbn[0]+"-M.jpg";
 
