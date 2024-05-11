@@ -24,7 +24,7 @@
                 <div class="location"></div>
                 <div class="author"></div>
                 <div class="publish-year"></div>
-                <div class="btn btn-sm btn-outline-secondary mt-2 mb-2"><a id="interested">I'm Interested</a></div>
+                <div class="btn btn-sm btn-outline-secondary mt-2 mb-2"><a id="interested">Visit On External Website</a></div>
             </div>
         </div>
     </div>
@@ -70,15 +70,15 @@
             <h2>Search For Books</h2>
             <hr class="my-6">
             <form action="" id="search-form"> <!-- possible attribute: pattern fo regex operations-->
-                <div class="form-group">
+                <div class="form-group mt-2">
                     <label>Author</label>
-                    <input class="form-control" type="text" placeholder="Aghata Christie" readonly>
+                    <input class="form-control" type="text" placeholder="Agatha Christie" readonly>
                 </div>
-                <div class="form-group">
+                <div class="form-group mt-2">
                     <label for="title">Title</label>
                     <input type="text" class="form-control" id="title">
                 </div>
-                <div class="form-group">
+                <div class="form-group mt-2">
                     <label>First Publish Year</label>
                     <div class="row">
                         <div class="col">
@@ -91,11 +91,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
+                <div class="form-group mt-2">
                     <label for="location">Location</label>
                     <input type="text" class="form-control" id="location"/>
                 </div>
-                <div class="form-group">
+                <div class="form-group mt-2">
                     <label for="exampleFormControlSelect2" data-tip="Use CTRL to select multiple options">Show (not functioning yet)</label>
                     <select multiple class="form-control" id="exampleFormControlSelect2">
                         <option>Subject</option>
@@ -119,15 +119,8 @@
                     <span id="results-total"></span> results
                 </span>
             </div>
-            <div id="loading-container">
-                <div id="loading-animation">
-                    <svg viewBox="0 0 50 50">
-                        <circle cx="25" cy="25" r="20" fill="none" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-dasharray="100 100" transform="rotate(0)">
-                        </circle>
-                    </svg>
-                </div>
-            </div>
-            <div id="error-message"></div>
+            <div id="loader"></div>
+            <div id="error-message"></div> <!-- TODO: add errors -->
         </div>
 
     </div>

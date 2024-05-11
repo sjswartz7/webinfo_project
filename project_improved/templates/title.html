@@ -5,6 +5,7 @@ Browse By Title
 {% endblock %}
 
 {% block specific_css %}
+<link rel="stylesheet" href="../static/hanne_style.css">
 
 {% endblock %}
 
@@ -23,14 +24,98 @@ Browse By Title
     </div>
 </template>
 
+<template id="cardPreviewTemplate">
+<!--    TODO: make subject wrap on one row and change columns sizes accordingly-->
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-auto">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="col">
+                <h3 class="preview-title"></h3>
+            </div>
+        </div>
+    </div>
+    <h4 class="preview-subtitle"></h4>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col">
+                <i class="fa-solid fa-circle-info float-end"></i>
+            </div>
+            <div class="col">
+                <div class="preview-info float-start"></div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <i class="fa-regular fa-calendar-days float-end"></i>
+            </div>
+            <div class="col">
+                <div class="preview-year float-start"></div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <i class="fa-solid fa-star float-end"></i>
+            </div>
+            <div class="col">
+                <div class="preview-rating float-start"></div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <i class="fa-solid fa-location-dot float-end"></i>
+            </div>
+            <div class="col">
+                <div class="preview-location float-start"></div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <i class="fa-solid fa-hashtag float-end"></i>
+            </div>
+            <div class="col">
+                <div class="preview-isbn float-start"></div>
+            </div>
+        </div>
+    </div>
+    <!-- TODO: add time book takes place, contributors (users in fas), and data tips for the icons ,
+            TODO: make button to jump to browse by map page-->
+</div>
+</template>
 
 
 
 <main>
-    <h2>Browse By Title</h2>
-
-    <div class="row flex-row justify-content-center" id="card-container">
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex align-items-center">
+                <h2>Browse By Title</h2>
+            </div>
+            <div class="col d-flex justify-content-end align-items-center m-3">
+                <div id="loader"></div>
+            </div>
+        </div>
     </div>
+
+
+    <div class="row flex-row justify-content-center card-container" id="card-container">
+    </div>
+
+    <div class="cards-preview">
+        <div class="preview" data-target="Murder on the Orient Express"></div>
+        <div class="preview" data-target="And Then There Were None"></div>
+        <div class="preview" data-target="The Mysterious Affair at Styles"></div>
+        <div class="preview" data-target="Death on the Nile"></div>
+        <div class="preview" data-target="The ABC Murders"></div>
+        <div class="preview" data-target="The Murder of Roger Ackroyd"></div>
+        <div class="preview" data-target="The Murder at the Vicarage"></div>
+        <div class="preview" data-target="Evil Under the Sun"></div>
+        <div class="preview" data-target="The Body in the Library"></div>
+        <div class="preview" data-target="Crooked House"></div>
+    </div>
+
 </main>
 
 </body>

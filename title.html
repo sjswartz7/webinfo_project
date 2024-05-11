@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browse By Title</title>
 </head>
 <body>
@@ -19,6 +20,66 @@
     </div>
 </template>
 
+<template id="cardPreviewTemplate">
+<!--    TODO: make subject wrap on one row and change columns sizes accordingly-->
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-auto">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="col">
+                <h3 class="preview-title"></h3>
+            </div>
+        </div>
+    </div>
+    <h4 class="preview-subtitle"></h4>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col">
+                <i class="fa-solid fa-circle-info float-end"></i>
+            </div>
+            <div class="col">
+                <div class="preview-info float-start"></div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <i class="fa-regular fa-calendar-days float-end"></i>
+            </div>
+            <div class="col">
+                <div class="preview-year float-start"></div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <i class="fa-solid fa-star float-end"></i>
+            </div>
+            <div class="col">
+                <div class="preview-rating float-start"></div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <i class="fa-solid fa-location-dot float-end"></i>
+            </div>
+            <div class="col">
+                <div class="preview-location float-start"></div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <i class="fa-solid fa-hashtag float-end"></i>
+            </div>
+            <div class="col">
+                <div class="preview-isbn float-start"></div>
+            </div>
+        </div>
+    </div>
+    <!-- TODO: add time book takes place, contributors (users in fas), and data tips for the icons ,
+          TODO: make button to jump to browse by map page-->
+</div>
+</template>
+
 
 <div class="container">
     <header class="blog-header py-3">
@@ -31,11 +92,8 @@
                 <h5>For History, Mystery, and Christie Lovers</h5>
             </div>
             <div class="col d-flex justify-content-end align-items-center m-3">
-                <a class="btn btn-sm btn-outline-secondary" href="search.html" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3">
-                        <circle cx="10.5" cy="10.5" r="7.5"></circle>
-                        <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
-                    </svg>
+                <a class="btn btn-md btn-outline-secondary" href="search.html" target="_blank">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                     Search
                 </a>
             </div>
@@ -43,9 +101,16 @@
 
         <div class="row d-flex justify-content-between">
             <div class="submenu">
-                <div class="submenu-item">Location</div>
-                <div class="submenu-item">Titles</div>
-                <div class="submenu-item">Year</div>
+                <div class="submenu-item">
+                    <a href="templates/map.html">Browse By Location</a></div>
+                <div class="submenu-item">
+                    <a href="title.html">Browse By Title</a></div>
+                <div class="submenu-item">
+                    <a href="agatha_timeline/timeline.html">Browse By Year</a></div>
+                <div class="submenu-item">
+                    <a href="sociopolitical_context.html">Socio-political Context</a></div>
+                <div class="submenu-item">
+                    <a href="agatha_timeline/agathabio.html">Bio</a></div>
             </div>
         </div>
         <hr width="fit" color="fff">
@@ -53,10 +118,35 @@
 </div>
 
 <main>
-    <h2>Browse By Title</h2>
-
-    <div class="row flex-row justify-content-center" id="card-container">
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex align-items-center">
+                <h2>Browse By Title</h2>
+            </div>
+            <div class="col d-flex justify-content-end align-items-center m-3">
+                <div id="loader"></div>
+            </div>
+        </div>
     </div>
+
+
+    <div class="row flex-row justify-content-center card-container" id="card-container">
+    </div>
+
+    <div class="cards-preview">
+        <div class="preview" data-target="Murder on the Orient Express"></div>
+        <div class="preview" data-target="And Then There Were None"></div>
+        <div class="preview" data-target="The Mysterious Affair at Styles"></div>
+        <div class="preview" data-target="Death on the Nile"></div>
+        <div class="preview" data-target="The ABC Murders"></div>
+        <div class="preview" data-target="The Murder of Roger Ackroyd"></div>
+        <div class="preview" data-target="The Murder at the Vicarage"></div>
+        <div class="preview" data-target="Evil Under the Sun"></div>
+        <div class="preview" data-target="The Body in the Library"></div>
+        <div class="preview" data-target="Crooked House"></div>
+    </div>
+
 </main>
 
 </body>
